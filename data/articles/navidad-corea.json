@@ -1,0 +1,12 @@
+{
+ "id":"navidad-corea","title":"카페가 많아요","lang":"ko","category":"Culture","level":"TOPIK 1",
+ "description":"Why are there so many cafés in Korea? A short example article.",
+ "youtube":"","audio":"media/navidad-corea.mp3",
+ "lines":[
+  {"text":"저는 매일 [아침]에 [커피]를 [마셔요|마시다].","start":0,"end":4},
+  {"text":"[한국] 사람도 커피를 [좋아해요|좋아하다].","start":4,"end":8},
+  {"text":"그래서 한국에는 [카페]가 아주 [많아요|많다].","start":8,"end":12},
+  {"text":"저는 [친구]와 카페에서 이야기해요.","start":12,"end":16},
+  {"text":"[주말]에도 카페에 [가요|가다].","start":16,"end":20}
+ ]
+}

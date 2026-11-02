@@ -1,0 +1,15 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>Lingua Log · Word Bank</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&family=Noto+Sans+JP:wght@400;700&family=Noto+Sans+SC:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css"></head><body>
+<main class="wrap"><h1>Word Bank</h1><div class="tabs" id="tabs"></div><input type="search" id="q" placeholder="Escribe para buscar una palabra" aria-label="Buscar"><p id="count" class="meta"></p><div id="list"></div></main>
+<script src="js/app.js"></script>
+<script>
+let lang='ko',data=[];
+const draw=()=>{const q=$('#q').value.trim().toLowerCase();
+ const r=data.filter(w=>!q||w.w.toLowerCase().startsWith(q)||w.tr.toLowerCase().includes(q)).sort((a,b)=>b.date.localeCompare(a.date));
+ $('#count').textContent=r.length+' palabras';
+ $('#list').innerHTML=r.length?r.map(w=>`<div class="wb"><b lang="${lang}">${w.w}</b><span>${w.tr} <small>(${w.type})</small></span><small>${w.date}</small></div>`).join(''):'<p>Aún no hay palabras aquí.</p>'};
+const load=async()=>{$('#tabs').innerHTML=Object.entries(LANGS).map(([k,v])=>`<button data-k="${k}" class="${k==lang?'active':''}">${v}</button>`).join('');
+ try{data=await getJSON(`data/wordbank/${lang}.json`)}catch(e){data=[]}draw()};
+$('#tabs').onclick=e=>{if(e.target.dataset.k){lang=e.target.dataset.k;load()}};$('#q').oninput=draw;load();
+</script></body></html>
