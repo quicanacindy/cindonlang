@@ -1,4 +1,4 @@
-const id=new URLSearchParams(location.search).get('id')||'too-much-coffee';
+const id=new URLSearchParams(location.search).get('id')||'navidad-corea';
 const audio=new Audio(),speeds=[.75,1,1.25,1.5];
 let A,WB={},cur=-1,loop=false,si=1,hasAudio=true;
 const fmt=s=>isFinite(s)?Math.floor(s/60)+':'+String(Math.floor(s%60)).padStart(2,'0'):'0:00';
