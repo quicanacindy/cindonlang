@@ -1,14 +1,14 @@
-<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>Lingua Log</title>
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>Cindon Lang</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&family=Noto+Sans+JP:wght@400;700&family=Noto+Sans+SC:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css"></head><body>
-<section class="hero"><div class="wrap"><h1>Lee, escucha y aprende conmigo</h1><p>Artículos con audio en coreano, japonés, chino, español e inglés.</p></div></section>
-<main class="wrap"><h2>Read or Listen</h2><div class="tabs" id="tabs"></div><div id="list"></div></main>
+<section class="hero"><div class="wrap"><h1>A Multilingual Virtual Notebook</h1><p>A personal collection of writing and listening materials from my ongoing language studies in Korean, Japanese, Chinese, and mother-tongue Spanish.</p></div></section>
+<main class="wrap"><h2>Read &amp; Listen</h2><div class="tabs" id="tabs"></div><div id="list"></div></main>
 <script src="js/app.js"></script>
 <script>
 let all=[],f='all';
-const draw=()=>{$('#tabs').innerHTML=['all',...Object.keys(LANGS)].map(k=>`<button data-k="${k}" class="${k==f?'active':''}">${k=='all'?'Todos':LANGS[k]}</button>`).join('');
+const draw=()=>{$('#tabs').innerHTML=['all',...Object.keys(LANGS)].map(k=>`<button data-k="${k}" class="${k==f?'active':''}">${k=='all'?'All':LANGS[k]}</button>`).join('');
  const l=all.filter(a=>f=='all'||a.lang==f);
- $('#list').innerHTML=l.length?l.map(a=>`<a class="card" href="article.html?id=${a.id}"><h3 lang="${a.lang}">${a.title}</h3><small>${LANGS[a.lang]} · ${a.level} · ${a.category}</small><p>${a.description}</p></a>`).join(''):'<p>Aún no hay artículos en este idioma.</p>'};
+ $('#list').innerHTML=l.length?l.map(a=>`<a class="card" href="article.html?id=${a.id}"><h3 lang="${a.lang}">${a.title}</h3><small>${LANGS[a.lang]} · ${a.level} · ${a.category}</small><p>${a.description}</p></a>`).join(''):'<p>No articles in this language yet.</p>'};
 $('#tabs').onclick=e=>{if(e.target.dataset.k){f=e.target.dataset.k;draw()}};
-getJSON('data/index.json').then(d=>{all=d;draw()}).catch(()=>{$('#list').textContent='No se pudo cargar la lista. Abre el sitio con Live Server o desde GitHub Pages.'});
+getJSON('data/index.json').then(d=>{all=d;draw()}).catch(()=>{$('#list').textContent='Could not load the list. Open the site with Live Server or from GitHub Pages.'});
 </script></body></html>

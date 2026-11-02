@@ -1,12 +1,62 @@
 [
-{"w":"아침","type":"noun","tr":"mañana / desayuno","date":"2026-11-02"},
-{"w":"커피","type":"noun","tr":"café","date":"2026-11-02"},
-{"w":"마시다","type":"verb","tr":"beber","date":"2026-11-02"},
-{"w":"한국","type":"noun","tr":"Corea","date":"2026-11-02"},
-{"w":"좋아하다","type":"verb","tr":"gustar","date":"2026-11-02"},
-{"w":"카페","type":"noun","tr":"cafetería","date":"2026-11-02"},
-{"w":"많다","type":"verb","tr":"haber mucho","date":"2026-11-02"},
-{"w":"친구","type":"noun","tr":"amigo/a","date":"2026-11-02"},
-{"w":"주말","type":"noun","tr":"fin de semana","date":"2026-11-02"},
-{"w":"가다","type":"verb","tr":"ir","date":"2026-11-02"}
+{
+"w": "아침",
+"type": "noun",
+"tr": "morning / breakfast",
+"date": "2026-11-02"
+},
+{
+"w": "커피",
+"type": "noun",
+"tr": "coffee",
+"date": "2026-11-02"
+},
+{
+"w": "마시다",
+"type": "verb",
+"tr": "to drink",
+"date": "2026-11-02"
+},
+{
+"w": "한국",
+"type": "noun",
+"tr": "Korea",
+"date": "2026-11-02"
+},
+{
+"w": "좋아하다",
+"type": "verb",
+"tr": "to like",
+"date": "2026-11-02"
+},
+{
+"w": "카페",
+"type": "noun",
+"tr": "café",
+"date": "2026-11-02"
+},
+{
+"w": "많다",
+"type": "verb",
+"tr": "to be many / a lot",
+"date": "2026-11-02"
+},
+{
+"w": "친구",
+"type": "noun",
+"tr": "friend",
+"date": "2026-11-02"
+},
+{
+"w": "주말",
+"type": "noun",
+"tr": "weekend",
+"date": "2026-11-02"
+},
+{
+"w": "가다",
+"type": "verb",
+"tr": "to go",
+"date": "2026-11-02"
+}
 ]

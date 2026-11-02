@@ -20,6 +20,7 @@ button{font:inherit;cursor:pointer;border:0;border-radius:0;background:none;colo
 .reader{max-width:720px;margin:0 auto;padding:1.5rem 1.2rem 11rem;font-size:1.35rem;line-height:2.1}
 .reader.big{font-size:1.7rem}
 .line{padding:.2rem .6rem;cursor:pointer;border-left:4px solid transparent}
+.line.np{margin-top:1.4rem}
 .line.on{background:var(--hl);border-left-color:var(--acc)}
 .reader img{display:block;max-width:100%;margin:1rem 0}
 u.w{text-decoration:underline;text-underline-offset:5px;cursor:pointer}

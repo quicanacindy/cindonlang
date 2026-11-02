@@ -1,1 +1,18 @@
-[{"id":"navidad-corea","title":"카페가 많아요","lang":"ko","category":"Culture","level":"TOPIK 1","description":"Why are there so many cafés in Korea? A short example article."}]
+[
+ {
+  "id": "dia-del-pollo-a-la-brasa",
+  "title": "El Día del Pollo a la Brasa",
+  "lang": "es",
+  "category": "Culture",
+  "level": "B2",
+  "description": "Did you know that in Peru it is a tradition to turn a dish like “Pollo a la Brasa” into a holiday?"
+ },
+ {
+  "id": "navidad-corea",
+  "title": "카페가 많아요",
+  "lang": "ko",
+  "category": "Culture",
+  "level": "TOPIK 1",
+  "description": "Why are there so many cafés in Korea? A short example article."
+ }
+]
