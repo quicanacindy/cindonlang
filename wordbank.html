@@ -1,15 +1,73 @@
 <!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>Cindon Lang · Word Bank</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&family=Noto+Sans+JP:wght@400;700&family=Noto+Sans+SC:wght@400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css"></head><body>
-<main class="wrap"><h1>Word Bank</h1><div class="tabs" id="tabs"></div><input type="search" id="q" placeholder="Type to search a word" aria-label="Search"><p id="count" class="meta"></p><div id="list"></div></main>
+<link rel="stylesheet" href="css/style.css">
+<style>
+:root{--cn:#F6EBC9;--cv:rgba(220,90,165,.22);--co:rgba(160,205,50,.32);--mn:#8a5f00}
+:root[data-theme=dark]{--cn:#1c1b35;--cv:rgba(175,35,125,.42);--co:rgba(35,115,55,.5);--mn:#FFD84D}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]){--cn:#1c1b35;--cv:rgba(175,35,125,.42);--co:rgba(35,115,55,.5);--mn:#FFD84D}}
+.alm{max-width:1500px;margin:0 auto;padding:1.5rem 1.2rem 4rem}
+.lay{display:grid;grid-template-columns:2fr 1fr;gap:1.2rem;align-items:start}
+.grid{display:grid;grid-template-columns:repeat(8,1fr);gap:.5rem}
+.c{display:block;width:100%;padding:.35rem;border:1px solid var(--line);background:var(--cn);text-align:center}
+.c.v{background:var(--cv)}.c.o{background:var(--co)}
+.c.sel{outline:3px solid var(--acc);outline-offset:1px}
+.im{position:relative;display:flex;align-items:center;justify-content:center;aspect-ratio:1;overflow:hidden;background:rgba(127,127,127,.12)}
+.im img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.ph{font-size:2rem;color:var(--mut);opacity:.6}
+.wd{display:block;margin-top:.3rem;font-weight:700;font-size:.95rem;overflow-wrap:anywhere}
+.key{display:flex;gap:1rem;flex-wrap:wrap;font-size:.85rem;margin:.6rem 0 1rem}
+.key i{display:inline-block;width:.9rem;height:.9rem;border:1px solid var(--line);vertical-align:-2px;margin-right:.3rem}
+#panel{position:sticky;top:4.5rem;max-height:calc(100vh - 5.5rem);overflow:auto;background:var(--navy);color:#fff;padding:1rem}
+.pimg{position:relative;display:flex;align-items:center;justify-content:center;aspect-ratio:1;background:rgba(255,255,255,.07);overflow:hidden}
+.pimg img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain}
+#panel h2{font-size:2rem;text-align:center;margin:.8rem 0 .1rem}
+.sub{text-align:center;color:#aebccb;margin-bottom:.8rem}
+.pn{background:var(--bg);color:var(--fg);padding:1rem;border:1px solid var(--line)}
+.pn .mn{color:var(--mn);font-weight:700;margin-bottom:.6rem}
+.pn ul{padding-left:1.2rem;margin-bottom:.6rem}
+.pn .dt{font-size:.85rem;text-align:right;margin:0}
+#close{display:none}
+@media(max-width:1299px){.grid{grid-template-columns:repeat(6,1fr)}}
+@media(max-width:899px){
+ .lay{display:block}.grid{grid-template-columns:repeat(4,1fr)}
+ #panel{display:none;position:fixed;inset:0;max-height:none;z-index:20;padding-top:calc(1rem + env(safe-area-inset-top,0px))}
+ #panel.open{display:block}
+ #close{display:block;margin:0 0 .8rem auto;padding:.5rem 1rem;background:var(--acc);color:#fff;font-weight:700}}
+@media(max-width:420px){.grid{grid-template-columns:repeat(3,1fr)}}
+</style></head><body>
+<main class="alm"><h1>Word Bank</h1><div class="tabs" id="tabs"></div>
+<input type="search" id="q" placeholder="Type to search a word" aria-label="Search">
+<p id="count" class="meta"></p>
+<div class="key"><span><i style="background:var(--cn)"></i>Nouns</span><span><i style="background:var(--cv)"></i>Verbs</span><span><i style="background:var(--co)"></i>Adverbs &amp; others</span></div>
+<div class="lay"><div class="grid" id="grid"></div>
+<aside id="panel"><button id="close">Close</button><div id="pbody"><p>Select a word.</p></div></aside></div></main>
 <script src="js/app.js"></script>
 <script>
-let lang='ko',data=[];
+let lang='ko',data=[],view=[];
+const kind=t=>t=='noun'?0:t=='verb'?1:2,cls=['n','v','o'];
+const dk=d=>(d||'').replace(/\./g,'-');
+const esc=s=>String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+const src=w=>w.img?(/^https?:/.test(w.img)?w.img:'data/media/words/'+w.img):'';
+const pic=(w,c)=>src(w)?`<img src="${esc(src(w))}" alt="" loading="lazy" decoding="async" onerror="this.remove()">`:`<span class="ph">${esc([...w.w][0]||'')}</span>`;
+const show=i=>{const w=view[i];if(!w)return;
+ document.querySelectorAll('.c.sel').forEach(e=>e.classList.remove('sel'));
+ const c=$(`.c[data-i="${i}"]`);if(c)c.classList.add('sel');
+ const ex=(w.examples||[]).map(x=>`<li>${esc(x)}</li>`).join('');
+ $('#pbody').innerHTML=`<div class="pimg">${pic(w)}</div><h2 lang="${lang}">${esc(w.w)}</h2><p class="sub">${esc(w.tr||'')} · ${esc(w.type||'')}</p><div class="pn" lang="${lang}">${w.mnemonic?`<p class="mn">${esc(w.mnemonic)}</p>`:''}${ex?`<ul>${ex}</ul>`:''}<p class="dt">${esc(w.date||'')}</p></div>`};
 const draw=()=>{const q=$('#q').value.trim().toLowerCase();
- const r=data.filter(w=>!q||w.w.toLowerCase().startsWith(q)||w.tr.toLowerCase().includes(q)).sort((a,b)=>b.date.localeCompare(a.date));
- $('#count').textContent=r.length+(r.length==1?' word':' words');
- $('#list').innerHTML=r.length?r.map(w=>`<div class="wb"><b lang="${lang}">${w.w}</b><span>${w.tr} <small>(${w.type})</small></span><small>${w.date}</small></div>`).join(''):'<p>No words here yet.</p>'};
+ view=data.filter(w=>!q||w.w.toLowerCase().startsWith(q)||(w.tr||'').toLowerCase().includes(q))
+  .sort((a,b)=>kind(a.type)-kind(b.type)||dk(b.date).localeCompare(dk(a.date)));
+ $('#count').textContent=view.length+(view.length==1?' word':' words');
+ $('#grid').lang=lang;
+ $('#grid').innerHTML=view.length?view.map((w,i)=>`<button class="c ${cls[kind(w.type)]}" data-i="${i}"><span class="im">${pic(w)}</span><span class="wd">${esc(w.w)}</span></button>`).join(''):'<p>No words here yet.</p>';
+ $('#pbody').innerHTML='<p>Select a word.</p>';
+ if(view.length&&matchMedia('(min-width:900px)').matches)show(0)};
 const load=async()=>{$('#tabs').innerHTML=Object.entries(LANGS).map(([k,v])=>`<button data-k="${k}" class="${k==lang?'active':''}">${v}</button>`).join('');
  try{data=await getJSON(`data/wordbank/${lang}.json`)}catch(e){data=[]}draw()};
-$('#tabs').onclick=e=>{if(e.target.dataset.k){lang=e.target.dataset.k;load()}};$('#q').oninput=draw;load();
+$('#tabs').onclick=e=>{if(e.target.dataset.k){lang=e.target.dataset.k;load()}};
+$('#q').oninput=draw;
+$('#grid').onclick=e=>{const c=e.target.closest('.c');if(c){show(+c.dataset.i);$('#panel').classList.add('open')}};
+$('#close').onclick=()=>$('#panel').classList.remove('open');
+document.onkeydown=e=>{if(e.key=='Escape')$('#panel').classList.remove('open')};
+load();
 </script></body></html>
