@@ -18,11 +18,18 @@
 "date": "2026-11-02"
 },
 {
-"w": "한국",
-"type": "noun",
-"tr": "Korea",
-"date": "2026-11-02"
-},
+ "w":"한국",
+ "type":"noun",
+ "tr":"Korea / South Korea",
+ "date":"2026.11.02",
+ "img":"ko/korea.webp",
+ "mnemonic":"한국 means Korea, but there's more to this little word than meets the eye: its official name is 대한민국 (Republic of Korea), but in casual conversations its citizens use 우리나라 (our country) affectionately when talking about their homeland.",
+ "examples":[
+  "Some bits of history: The English word Korea actually comes from 고려 (Goryeo), an ancient Korean dynasty that stand from 918 to 1392! And before that, the country was ruled by the famous 조선 (Joseon) Dynasty (1392–1897).So 고려, 조선, 대한민국 (1897-1910)... refer to different historical periods of Korea.",
+  "예):",
+  "- 우리나라는 아름다워요. = Our country is beautiful.",
+  "- 저는 한국에 살아요. = I live in Korea.",
+  "- 대한민국의 수도는 서울이에요. = The capital of the Republic of Korea is Seoul."]},
 {
 "w": "좋아하다",
 "type": "verb",
