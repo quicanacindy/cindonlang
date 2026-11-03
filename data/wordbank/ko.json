@@ -58,5 +58,83 @@
 "type": "verb",
 "tr": "to go",
 "date": "2026-11-02"
+},
+{
+"w": "나라",
+"type": "noun",
+"tr": "country",
+"date": "2026.11.03"
+},
+{
+"w": "방문하다",
+"type": "verb",
+"tr": "to visit",
+"date": "2026.11.03"
+},
+{
+"w": "계획",
+"type": "noun",
+"tr": "plan",
+"date": "2026.11.03"
+},
+{
+"w": "자신",
+"type": "noun",
+"tr": "oneself",
+"date": "2026.11.03"
+},
+{
+"w": "주의",
+"type": "noun",
+"tr": "attention/caution",
+"date": "2026.11.03"
+},
+{
+"w": "기울이다",
+"type": "noun",
+"tr": "to direct/to devote",
+"date": "2026.11.03"
+},
+{
+"w": "가장",
+"type": "adverb",
+"tr": "most",
+"date": "2026.11.03"
+},
+{
+"w": "간단하다",
+"type": "verb",
+"tr": "to be simple",
+"date": "2026.11.03"
+},
+{
+"w": "문화",
+"type": "noun",
+"tr": "culture",
+"date": "2026.11.03"
+},
+{
+"w": "면",
+"type": "noun",
+"tr": "aspect/side",
+"date": "2026.11.03"
+},
+{
+"w": "점",
+"type": "noun",
+"tr": "point/fact",
+"date": "2026.11.03"
+},
+{
+"w": "이해하다",
+"type": "verb",
+"tr": "to understand",
+"date": "2026.11.03"
+},
+{
+"w": "중요하다",
+"type": "verb",
+"tr": "to be important",
+"date": "2026.11.03"
 }
 ]
