@@ -11,10 +11,12 @@ My Korean notes. Everything lives in this one file, so I just keep adding.
 - [Details of korean](details-of-korean)
 
 
-## Writing System (한글)                                             2026.11.03
+## Writing System (한글) 2026.11.03
 The first thing you need to learn when studying any language is its writing system. Korean is based on Hangul (한글), the Korean alphabet.
+(picture)
 Hangul letters (자모) are combined to form syllable blocks (음절). Each block consists of 2 to 4 letters (자모).
-예) 개 (2) ; 빵 (3) ; 닭 (3)
+예):
+개 (2) ; 빵 (3) ; 닭 (4)
 
 ## About Pronunciation (발음)
 I recommend watching this video completely, as it explains the pronunciation rules in detail. In Korean, the pronunciation of a letter can change depending on the letters that come before or after it.
@@ -47,7 +49,7 @@ Formal / Formal-polite (하십시오체)
 Honorific expressions (높임말)
 
 ## Useful Phrases (유용한 표현)
-(picture)
+...
 
 ## Topics of Interest When Studying Korean
 Relevant topics and areas to explore when learning Korean and preparing for the TOPIK (Test of Proficiency in Korean).
