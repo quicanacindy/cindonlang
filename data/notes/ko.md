@@ -3,12 +3,12 @@ My Korean notes. Everything lives in this one file, so I just keep adding.
 ## Index
 - [2026.11.02 · Places with 에 and 에서](#2026-11-02-places-with-에-and-에서)
 - [Useful structures](#useful-structures)
-- [2026.11.03 · Writing System (한글)](#2026-11-03-writing-system-(한글))
-- [About Pronunciation (발음)](#about-ronunciation-(발음))
-- [Numbers (숫자)](#numbers-(숫자))
-- [Word Order and Sentence Structure (어순과 문장 구조)](#word-order-and-sentence-structure-(어순과-문장-구조))
-- [Etiquette and Speech Levels (말투와 높임말)](#etiquette-and-speech-levels-(말투와-높임말))
-- [Useful Phrases (유용한 표현)](useful-phrases-(유용한-표현))
+- [2026.11.03 · Writing System (한글)](#2026-11-03-writing-system-한글)
+- [About Pronunciation (발음)](#about-ronunciation)
+- [Numbers (숫자)](#numbers-숫자)
+- [Word Order and Sentence Structure (어순과 문장 구조)](#word-order-and-sentence-structure-어순과-문장-구조)
+- [Etiquette and Speech Levels (말투와 높임말)](#etiquette-and-speech-levels-말투와-높임말)
+- [Useful Phrases (유용한 표현)](useful-phrases-유용한-표현)
 - [Topics of Interest When Studying Korean](topics-of-interest-when-studying-korean)
 - [Details of korean](details-of-korean)
 
