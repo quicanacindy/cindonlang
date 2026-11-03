@@ -96,7 +96,6 @@ Language and Culture
 전통 vs 현대 (tradición vs modernidad)
 
 ## Details of korean
-
 In korean, the establishment that sells coffee, café, is said 카페 (kkape), meanwhile the product itself is said 커피 (kkopi). 
 
 Connectors commonly used in articles: 
