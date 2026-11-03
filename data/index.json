@@ -14,5 +14,13 @@
   "category": "Culture",
   "level": "TOPIK 1",
   "description": "Why are there so many cafés in Korea? A short example article."
+ },
+ {
+ "id":"linguistic-taboos-in-korea",
+ "title":"한국의 언어적 금기",
+ "lang":"ko",
+ "category":"Culture",
+ "level":"TOPIK 3",
+ "description":"In Korea, there are certain words and expressions that are considered linguistic taboos."
  }
 ]
