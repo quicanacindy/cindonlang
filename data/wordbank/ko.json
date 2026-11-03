@@ -29,12 +29,15 @@
 "tr": "to like",
 "date": "2026-11-02"
 },
-{
-"w": "카페",
-"type": "noun",
-"tr": "café",
-"date": "2026-11-02"
-},
+{"w":"카페","type":"noun","tr":"café","date":"2026.11.02",
+ "img":"ko/cafe.webp",
+ "mnemonic":"The establishment that serves coffee is said 카페 (sounds just like “café”), meanwhile the product itself is said 커피 (kopi). ",
+ "examples":["I used to confuse 카페 and 커피, maybe a way of saving memory of my primitive Korean-mode-brain. Also because in Spanish I find it hilarious to call the establishment the exact way we call the product and the establishment:",
+"-¡Te veo en el café! = 카페에서 만나요!",
+"(See you in the café!)",
+"-No me gusta el café de ese café. = 저는 그 카페 커피를 좋아하지 않아요.",
+"(I don’t like the coffee from that café.)",
+"See? In spanish it sounds weird to repeat the same word for place and product, so we distinguish it by calling it cafetería = 커피숍 (coffee shop) / 커피 가게 (coffee shop)."]},
 {
 "w": "많다",
 "type": "verb",
@@ -91,7 +94,7 @@
 },
 {
 "w": "기울이다",
-"type": "noun",
+"type": "verb",
 "tr": "to direct/to devote",
 "date": "2026.11.03"
 },
