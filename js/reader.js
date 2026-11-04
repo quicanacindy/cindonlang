@@ -1,4 +1,4 @@
-const id=new URLSearchParams(location.search).get('id')||'navidad-corea';
+const id=new URLSearchParams(location.search).get('id')||'too-much-coffee';
 const audio=new Audio(),speeds=[.75,1,1.25,1.5];
 let A,WB={},cur=-1,loop=false,si=1,hasAudio=true;
 const esc=s=>String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
