@@ -72,3 +72,4 @@ input[type=search]{width:100%;padding:.8rem;font:inherit;border:1px solid var(--
  .row .tr{grid-column:3;justify-self:start;max-width:420px;margin:.4rem 1rem .4rem 1.5rem}
  .row .cm::after{content:'';position:absolute;left:100%;top:.7rem;width:2.2rem;border-top:2px solid var(--plus)}
 }
+.player .row{flex-direction:row}
