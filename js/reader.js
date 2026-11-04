@@ -12,7 +12,7 @@ const sel=i=>{const row=$(`.row[data-i="${i}"]`);if(!row)return;const was=row.cl
  const t=A.lines[i].tr;
  row.querySelector('.tr').innerHTML=(t?`<p>“${esc(t)}”</p>`:'<p>No translation yet</p>')+(hasAudio?`<button class="pl" data-i="${i}">▶ Play this line</button>`:'')};
 (async()=>{
- try{A=await getJSON(`data/articles/${id}.json`)}catch(e){$('#reader').textContent='Article not found.';return}
+ try{A=await getJSON(`data/articles/${id}.json`)}catch(e){$('#reader').textContent='Could not load this article: '+e.message;return}
  try{(await getJSON(`data/wordbank/${A.lang}.json`)).forEach(w=>WB[w.w]=w)}catch(e){}
  document.title=A.title+' · Cindon Lang';
  $('#hero').innerHTML=`<div class="wrap"><span class="meta">${A.category} · ${A.level}</span><h1 lang="${A.lang}">${A.title}</h1><p>${A.description}</p><div class="stats"><div><b>${A.lines.length}</b>Lines</div><div><b id="dur2">–</b>Audio</div></div><a class="btn" href="#reader">START</a>${A.youtube?` <a class="meta" href="${A.youtube}" target="_blank" rel="noopener">Watch the video on YouTube</a>`:''}</div>`;
