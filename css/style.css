@@ -46,3 +46,29 @@ input[type=search]{width:100%;padding:.8rem;font:inherit;border:1px solid var(--
 .notes a{text-underline-offset:3px}.notes [id]{scroll-margin-top:4.5rem}
 .lk{font-size:.8rem;color:var(--mut);margin-left:.4rem;opacity:.5;padding:0 .4rem}.lk:hover,.lk:focus-visible{opacity:1;color:var(--acc)}
 @media(max-width:480px){.top{padding-left:.8rem;padding-right:.8rem}.top nav{gap:.7rem;font-size:.9rem}}
+
+/* comments (left) + translations (right)*/
+:root{--cmb:#E3BDD8;--plus:#C06AAE;--trb:#E8DCAA;--ys:rgba(180,140,20,.28);--mn:#8a5f00}
+:root[data-theme=dark]{--cmb:#3d1736;--plus:#B04A9B;--trb:rgba(255,216,77,.1);--ys:rgba(255,216,77,.14);--mn:#FFD84D}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]){--cmb:#3d1736;--plus:#B04A9B;--trb:rgba(255,216,77,.1);--ys:rgba(255,216,77,.14);--mn:#FFD84D}}
+.reader{max-width:1500px}
+.reader>img{display:block;max-width:680px;width:100%;margin:1rem auto}
+.row{display:flex;flex-direction:column}
+.row.np{margin-top:1.4rem}
+.row .line{order:1;position:relative;padding:.2rem .6rem .2rem 2.2rem}
+.row .tr{order:2}.row .cm{order:3}
+.line.sel{background:var(--ys)}
+.plus{position:absolute;left:.4rem;top:.35rem;width:1.5rem;height:1.5rem;line-height:1;font-size:1.4rem;font-weight:700;color:var(--plus);transition:transform .15s}
+.row.co .plus{transform:rotate(45deg)}
+.cm,.tr{display:none;margin:.4rem 0;padding:.8rem 1rem;font-size:1rem;line-height:1.6;white-space:pre-line;color:var(--fg)}
+.row.co .cm{display:block;background:var(--cmb)}
+.row.st .tr{display:block;background:var(--trb);border-left:4px solid var(--mn)}
+.pl{display:block;margin-top:.5rem;color:var(--mn);font-weight:700;font-size:.9rem}
+@media(min-width:1200px){
+ .row{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,680px) minmax(0,1fr);align-items:start}
+ .row .cm,.row .line,.row .tr{grid-row:1;order:0}
+ .row .cm{grid-column:1;justify-self:end;max-width:420px;position:relative;margin:.4rem 2.2rem .4rem 1rem}
+ .row .line{grid-column:2}
+ .row .tr{grid-column:3;justify-self:start;max-width:420px;margin:.4rem 1rem .4rem 1.5rem}
+ .row .cm::after{content:'';position:absolute;left:100%;top:.7rem;width:2.2rem;border-top:2px solid var(--plus)}
+}
