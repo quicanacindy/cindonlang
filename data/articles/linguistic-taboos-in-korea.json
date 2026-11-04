@@ -3,18 +3,23 @@
  "description":"In Korea, there are certain words and expressions that are considered linguistic taboos.",
  "youtube":"","audio":"media/linguistic-taboos-in-korea.mp3",
  "lines":[
-  {"text":"한국에는 사람들이 [직접적]으로 [말하기]를 [피하]는 [단어]와 [표현들]이 있습니다.","start":0,"end":4},
-  {"text":"어떤 경우에는 [특정] 단어의 [발음]이 [불길한] 것을 [떠올리]게 하기 때문입니다.","start":4,"end":9},
-  {"text":"또 [다른] 경우에는 [죽음]이나 [질병]과 같은 주제에 대해 이야기하는 것이 사람들을 [불편하]게 [만들]기 때문입니다.","start":4,"end":9},
-  {"text":"[이러한] 표현들을 [언어적] [금기라]고 합니다.","start":4,"end":9},
+  {"text":"한국에는 사람들이 [직접적]으로 [말하기|말하다]를 [피하|피하다]는 [단어]와 [표현들]이 있습니다.","start":0,"end":4,
+  "tr":"In Korea, there are words that people avoid saying directly.",
+  "comment":"The structure -기를 피하다 means “to avoid doing something”.\nExample: 커피 마시기를 피해요. = I avoid drinking coffee."},
+  {"text":"어떤 경우에는 [특정] 단어의 [발음]이 [불길한|불길하다] 것을 [떠올리|떠올리다]게 하기 때문입니다.","start":4,"end":9},
+  {"text":"또 [다른|다르다] 경우에는 [죽음]이나 [질병]과 같은 주제에 대해 이야기하는 것이 사람들을 [불편하|불편하다]게 [만들|만들다]기 때문입니다.","start":4,"end":9},
+  {"text":"[이러한|이렇다] 표현들을 [언어적] [금기]라고 합니다.","start":4,"end":9},
   
-  {"text":"[흥미로운] [예] 중 하나는 [숫자] 4입니다.","start":0,"end":4,"p": 1},
-  {"text":"한국의 [일부] [건물]에서는 엘리베이터에 4층이 [없]거나 숫자 4 [대신] [알파벳 F]를 [사용하]는 것을 볼 수 있습니다.","start":4,"end":9},
+  {"text":"[흥미로운|흥미롭다] [예] 중 하나는 [숫자] 4입니다.","start":0,"end":4,"p": 1},
+  {"text":"한국의 [일부] [건물]에서는 엘리베이터에 4층이 [없|없다]거나 숫자 4 [대신] [알파벳 F]를 [사용하|사용하다]는 것을 볼 수 있습니다.","start":4,"end":9},
   {"text":"왜 그럴까요?","start":4,"end":9},
-  {"text":"숫자 4를 [뜻하]는 [한자] '사(四)'의 한국어 발음이 죽음을 뜻하는 한자 '사(死)'의 발음과 같기 때문입니다.","start":4,"end":9}, 
-  {"text":"이러한 발음의 [유사성] 때문에 일부 사람들은 숫자 4를 불길하게 [여깁니다].","start":4,"end":9},
+  {"text":"숫자 4를 [뜻하|뜻하다]는 [한자] '사(四)'의 한국어 발음이 죽음을 뜻하는 한자 '사(死)'의 발음과 같기 때문입니다.","start":4,"end":9}, 
+  {"text":"이러한 발음의 [유사성] 때문에 일부 사람들은 숫자 4를 불길하게 [여깁|여기다]니다.","start":4,"end":9},
   
   {"text":"따라서 한국이나 다른 [나라]를 [방문할|방문하다] [계획]이 있는 외국인들은 [자신]이 사용하는 표현에 [주의]를 [기울|기울이다]이고,","start":0,"end":4,"p": 1},
   {"text":"[가장] [간단한|간단하다] 표현조차도 그 나라의 [문화]에 대한 흥미로운 [면]을 보여 줄 수 있다는 [점]을 [이해하|이해하다]는 것이 [중요합|중요하다]니다.","start":4,"end":9}
+  {"text":"한국에는 사람들이 ...","start":0,"end":5,
+ "tr":"In Korea, there are words that people avoid saying directly.",
+ "comment":"The structure -기를 피하다 means “to avoid doing something”.\nExample: 커피 마시기를 피해요. = I avoid drinking coffee."}
  ]
 }
