@@ -1,0 +1,44 @@
+[
+{
+"w": "仕事",
+"type":"noun",
+"tr":"（しごと）- Work,Job",
+"date":"2026.11.05",
+"img":"ja/work.webp",
+"mnemonic":"It is composed of two kanji: 仕 (serve/do) and 事 (thing/matter). Think of it as 'a matter of things you do'. Don't confuse 仕事 (shigoto) with 働く (hataraku), which is the verb 'to work'.",
+"examples":[
+ "예):",
+ "- 今日は仕事があります。 = I have work today.",
+ "- 父は毎日仕事に行きます。 = My father goes to work every day.",
+ "- 私の仕事は日本語を教えることです。 = My job is teaching Japanese.",
+ "- 仕事が終わりました。 = Work is finished."]},
+{
+"w": "後",
+"type":"noun",
+"tr":"（あと）- After, behind, later",
+"date":"2026.11.05",
+"img":"ja/after.webp",
+"mnemonic":"Remember: the opposite of 後 is 前 (まえ), 'before' or 'in front'",
+"examples":[
+ "Be careful! 後 has different pronunciations depending on its meaning and context. あと means 'after' or 'later' in kanji, and 'what remains' in hiragana. 後ろ (うしろ) means 'behind' or 'the back'.",
+ "It can also be read ご in compound words, such as: 食後 (しょくご) meaning 'after a meal'.",
+ "예):",
+ "- 後で電話します。 = I'll call you later.",
+ "- 仕事の後で友達に会います。 = I'll meet my friend after work.",
+ "- 後ろに人がいます。 = There is a person behind me.",
+ "- あと一つあります。 = There is one more."]},
+{
+"w": "過ごす",
+"type":"verb",
+"tr":"（すごす）- To spend (time), to pass (time)",
+"date":"2026.11.05",
+"img":"ko/spend.webp",
+"mnemonic":"It is composed of 過 (exceed/pass) and す (the hiragana ending). You can find it in expressions such as 過ごし方 (すごしかた), meaning 'way of spending time'.",
+"examples":[
+ "過ぎる (すぎる) means 'to pass' or 'to exceed', while 過ごす focuses on spending or passing time.",
+ "예):",
+ "- 週末は家で過ごします。 = I spend the weekend at home.",
+ "- 友達と楽しく過ごしました。 = I had a good time with my friends.",
+ "- 夏休みを日本で過ごしたいです。 = I want to spend my summer vacation in Japan.",
+ "- 毎日を大切に過ごします。 = I make the most of every day"]}
+]
