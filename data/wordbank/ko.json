@@ -7,10 +7,16 @@
 },
 {
 "w": "커피",
-"type": "noun",
-"tr": "coffee",
-"date": "2026-11-02"
-},
+ "type":"noun",
+ "tr":"coffee",
+ "date":"2026.11.02",
+ "img":"ko/coffee.webp",
+ "mnemonic":"Be aware that 코피 (kopi) means 'nosebleed', one vowel shift away from 커피 (keopi).",
+ "examples":[
+  "예):",
+  "코피가 나서 커피를 못 마셨다. = I couldn't drink coffee because of a nosebleed.",
+  "- 커피를 마시다가 코피가 났다. = I got a nosebleed while drinking coffee.",
+  "- 코피가 나서 커피를 쏟았다. = I spilled the coffee because of a nosebleed."]},
 {
 "w": "마시다",
 "type": "verb",
