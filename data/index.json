@@ -22,5 +22,13 @@
  "category":"Culture",
  "level":"TOPIK 3",
  "description":"In Korea, there are certain words and expressions that are considered linguistic taboos."
+ },
+ {
+ "id":"work-lifestyle",
+ "title":"仕事と生活",
+ "lang":"ja",
+ "category":"Lifestyle",
+ "level":"JLPT N4",
+ "description":"How people work and balance with their ways to enjoy their free time."
  }
 ]
