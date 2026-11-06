@@ -1,0 +1,57 @@
+{
+  "id":"work-lifestyle","title": "仕事と生活","lang": "ja","category": "Lifestyle","level": "JLPT N4",
+  "description":"A short article about work, daily routines, and how people enjoy their free time.",
+  "youtube":"",
+  "audio":"media/work-lifestyle.mp3",
+  "lines":[
+    {
+      "text": "[毎日] [働く] 人はたくさんいます。",
+      "start": 0,
+      "end": 4,
+      "tr": "There are many people who work every day.",
+      "comment": "The structure ～人 means “people who...” when it follows a verb in its plain form. Here, 働く人 means “people who work”.\nExample: 毎日勉強する人がいます。 = There are people who study every day.\nExample: たくさんの人が公園にいます。 = There are many people in the park."
+    },
+    {
+      "text": "[会社]で働く人もいれば、[家]や[店]で働く人もいます。",
+      "start": 4,
+      "end": 9,
+      "tr": "Some people work at companies, while others work at home or in shops.",
+      "comment": "The particle で indicates the place where an action takes place. The structure ～人もいれば、～人もいます expresses that there are different kinds of people: “some people..., while others...”.\nExample: 学校で勉強する人もいれば、家で勉強する人もいます。 = Some people study at school, while others study at home.\nExample: 店で働いています。 = I work in a shop."
+    },
+    {
+      "text": "みんな [違う] [仕事]をしていますが、仕事は毎日の[生活]の[大切]な[一部]です。",
+      "start": 9,
+      "end": 15,
+      "tr": "Everyone does different jobs, but work is an important part of everyday life.",
+      "comment": "The expression ～をしています describes an activity or something someone does. The particle が connects two contrasting ideas, similar to “but”.\nExample: 私たちは違う仕事をしています。 = We do different jobs.\nExample: 家族は私の生活の大切な一部です。 = My family is an important part of my life."
+    },
+    {
+      "text": "仕事が[終わった|終わる] [後]、人は[ゆっくり]したり、好きなことをしたりしたいです。",
+      "start": 15,
+      "end": 21,
+      "tr": "After work is over, people want to relax and do things they like.",
+      "comment": "The structure ～た後 means “after doing something” or “after something happens”. ゆっくり means “slowly” or “relaxingly”; ゆっくりする means “to relax” or “take it easy”. 好き（すき） means “liked” or “favorite” and is used with な when it modifies a noun, as in 好きなこと (things one likes). The structure ～たり～たりする lists example activities. したい expresses the desire to do something.\nExample: 仕事が終わった後、家に帰ります。 = After work is over, I go home.\nExample: 休みの日はゆっくりしたいです。 = I want to relax on my day off."
+    },
+    {
+      "text": "[映画]を[見|見る]たり、本を[読ん|読む]だり、[友達]に[会っ|会う]たりする人もいます。",
+      "start": 21,
+      "end": 27,
+      "tr": "Some people watch movies, read books, or meet friends.",
+      "comment": "The particle に marks the person someone meets. The pattern ～たり～たりする gives examples of activities without listing every possible activity. Notice that the たり form is made from the past short form: 見た → 見たり, 読んだ → 読んだり, 会った → 会ったり.\nExample: 音楽を聞いたり、本を読んだりします。 = I listen to music and read books, among other things.\nExample: 週末に友達に会います。 = I meet my friends on the weekend."
+    },
+    {
+      "text": "[一生懸命] 働くことだけでなく、仕事の後の時間を[楽しむ]ことも[大切]だと思います。",
+      "start": 27,
+      "end": 34,
+      "tr": "I think that not only working hard but also enjoying the time after work is important.",
+      "comment": "一生懸命（いっしょうけんめい） means “hard” or “with great effort”. こと turns a verb or phrase into a noun-like expression: 働くこと means “working”. The structure ～だけでなく means “not only... but also...”. 時間（じかん） means “time”. 楽しむ（たのしむ） means “to enjoy”. The structure ～ことも大切 means “doing something is also important”. と思います means “I think that...”.\nExample: 日本語を勉強することだけでなく、使うことも大切です。 = Not only studying Japanese but also using it is important.\nExample: 毎日の生活を楽しみたいです。 = I want to enjoy everyday life."
+    },
+    {
+      自由な時間をどう過ごすかで、毎日の生活はもっと楽しくなります。
+      "text": "[自由]な時間をどう[過ごす]かで、毎日の生活はもっと[楽しく|楽しい]なります。",
+      "start": 34,
+      "end": 40,
+      "tr": "How we spend our free time makes everyday life even more enjoyable.",
+      "comment": "The structure ～かで means “depending on how...” or “by how...”. もっと means “more” or “even more”. 楽しい（たのしい） means “fun” or “enjoyable”. When 楽しい becomes an adverb before なります, it changes to 楽しく: 楽しくなる means “to become enjoyable”.\nExample: 休みの日をどう過ごしますか。 = How do you spend your days off?\nExample: 友達と話すと、毎日がもっと楽しくなります。 = Talking with friends makes every day more enjoyable."}
+  ]
+}
