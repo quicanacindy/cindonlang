@@ -188,7 +188,7 @@
   "examples":["저는 케이크를 만들어요. = I make a cake.","그 말은 저를 행복하게 만들어요. = Those words make me happy."]},
 
 {"w":"이렇다","type":"adjective","tr":"to be like this; to be this way","date":"2026.11.04",
-  "img":"ko/like-this.webp",
+  "img":"ko/like_this.webp",
   "mnemonic":"A descriptive verb used to refer to something that is like this or has this kind of nature. 이러한 is the form used before a noun, meaning “such” or “these kinds of”. Compare 그렇다 (to be like that) and 저렇다 (to be like that over there).",
   "examples":["이러한 문제가 있어요. = There is this kind of problem.","왜 이렇게 어려워요? = Why is it so difficult?"]},
 
