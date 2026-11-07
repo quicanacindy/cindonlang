@@ -3,8 +3,14 @@
 "w": "아침",
 "type": "noun",
 "tr": "morning / breakfast",
-"date": "2026-11-02"
-},
+"date": "2026.11.02",
+"img": "ko/morning.webp",
+"mnemonic": "아침 means both 'morning' and 'breakfast', so the context decides. Compare 점심 (lunch / midday) and 저녁 (evening / dinner): the three meal words are also the three parts of the day. To make 'breakfast' explicit, say 아침밥 or 아침 식사.",
+"examples": [
+ "예):",
+ "- 저는 매일 아침 일곱 시에 일어나요. = I wake up at seven every morning.",
+ "- 아침 먹었어요? = Did you eat breakfast?",
+ "- 오늘 아침은 정말 추웠어요. = This morning was really cold."]},
 {
 "w": "커피",
  "type":"noun",
@@ -21,8 +27,14 @@
 "w": "마시다",
 "type": "verb",
 "tr": "to drink",
-"date": "2026-11-02"
-},
+"date": "2026.11.02",
+"img": "ko/drink.webp",
+"mnemonic": "마시다 is used for liquids: 물을 마시다 (to drink water), 커피를 마시다, 술을 마시다. Medicine is not 'drunk' in Korean but 'eaten': 약을 먹다. Its polite present form is 마셔요, and 마시고 싶어요 means 'I want to drink'.",
+"examples": [
+ "예):",
+ "- 물을 마셔요. = I drink water.",
+ "- 친구와 커피를 마셨어요. = I drank coffee with my friend.",
+ "- 약은 마시는 것이 아니라 먹는 거예요. = Medicine is not 'drunk', it is 'eaten'."]},
 {"w":"한국",
  "type":"noun",
  "tr":"Korea / South Korea",
@@ -39,8 +51,14 @@
 "w": "좋아하다",
 "type": "verb",
 "tr": "to like",
-"date": "2026-11-02"
-},
+"date": "2026.11.02",
+"img": "ko/like.webp",
+"mnemonic": "좋아하다 is the verb 'to like', built from 좋다 (to be good) + 하다. Because it is a real verb, the thing you like takes 을/를: 커피를 좋아해요. Don't confuse it with 좋다 (adjective), which takes 이/가 and means 'to be good'. Its opposite is 싫어하다 (to dislike).",
+"examples": [
+ "예):",
+ "- 저는 커피를 좋아해요. = I like coffee.",
+ "- 친구는 한국 음악을 좋아해요. = My friend likes Korean music.",
+ "- 저는 매운 음식을 좋아하지 않아요. = I don't like spicy food."]},
 {"w":"카페","type":"noun","tr":"café","date":"2026.11.02",
  "img":"ko/cafe.webp",
  "mnemonic":"The establishment that serves coffee is said 카페 (sounds just like “café”), meanwhile the product itself is said 커피 (kopi). ",
@@ -54,26 +72,50 @@
 "w": "많다",
 "type": "verb",
 "tr": "to be many / a lot",
-"date": "2026-11-02"
-},
+"date": "2026.11.02",
+"img": "ko/many.webp",
+"mnemonic": "많다 is a descriptive verb (it works like an adjective). The ㅎ is silent before a vowel: 많아요 sounds like [마나요]. Before a noun, use 많은 (많은 사람, 'many people'), and the adverb 'a lot' is 많이. Its opposite is 적다 (to be few).",
+"examples": [
+ "예):",
+ "- 사람이 많아요. = There are many people.",
+ "- 한국에는 산이 많아요. = There are many mountains in Korea.",
+ "- 오늘은 숙제가 많아요. = There is a lot of homework today."]},
 {
 "w": "친구",
 "type": "noun",
 "tr": "friend",
-"date": "2026-11-02"
-},
+"date": "2026.11.02",
+"img": "ko/friend.webp",
+"mnemonic": "친구 comes from the Sino-Korean 親舊 (close + old): 'an old, close one'. It is used for any gender, and the plural is 친구들. 남자친구 and 여자친구 mean 'boyfriend' and 'girlfriend'. Unlike Japanese 友達 and Chinese 朋友, it doesn't share characters with them.",
+"examples": [
+ "예):",
+ "- 친구와 영화를 봐요. = I watch a movie with my friend.",
+ "- 제 친구는 한국 사람이에요. = My friend is Korean.",
+ "- 주말에 친구들을 만나요. = I meet my friends on the weekend."]},
 {
 "w": "주말",
 "type": "noun",
 "tr": "weekend",
-"date": "2026-11-02"
-},
+"date": "2026.11.02",
+"img": "ko/weekend.webp",
+"mnemonic": "A Sino-Korean word made from 週 (week) + 末 (end): 'the end of the week'. Same characters as Japanese 週末 and Chinese 周末. Its opposite is 평일 (weekday). Useful phrases: 이번 주말 (this weekend), 지난 주말 (last weekend).",
+"examples": [
+ "예):",
+ "- 주말에 뭐 해요? = What are you doing on the weekend?",
+ "- 이번 주말에 친구를 만나요. = I'm meeting a friend this weekend.",
+ "- 지난 주말에는 집에 있었어요. = I stayed home last weekend."]},
 {
 "w": "가다",
 "type": "verb",
 "tr": "to go",
-"date": "2026-11-02"
-},
+"date": "2026.11.02",
+"img": "ko/go.webp",
+"mnemonic": "가다 means 'to go' (away from the speaker), and its opposite is 오다 (to come). The stem 가 + -아요 merges into 가요. The place takes 에: 학교에 가요. Useful patterns: 가고 싶어요 (I want to go) and 가 보세요 (try going).",
+"examples": [
+ "예):",
+ "- 학교에 가요. = I go to school.",
+ "- 내일 친구와 바다에 가요. = Tomorrow I'm going to the sea with my friend.",
+ "- 한국에 가고 싶어요. = I want to go to Korea."]},
 
 {"w":"직접적","type":"adjective","tr":"direct; straightforward","date":"2026.11.04",
   "img":"ko/direct.webp",
